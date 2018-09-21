@@ -41,14 +41,17 @@ def return_window_average(iterable, window):
     res.extend(list(moving_average(iterable, window)))
     return res
 
-INFY['4_week'] = return_window_average(INFY['Close'], 4)
-INFY['16_week'] = return_window_average(INFY['Close'], 16)
+INFY['4_week'] = return_window_average(INFY['Close'], 20)
+INFY['16_week'] = return_window_average(INFY['Close'], 80)
+INFY['52_week'] = return_window_average(INFY['Close'], 260)
 
-TCS['4_week'] = return_window_average(TCS['Close'], 4)
-TCS['16_week'] = return_window_average(TCS['Close'], 16)
+TCS['4_week'] = return_window_average(TCS['Close'], 20)
+TCS['16_week'] = return_window_average(TCS['Close'], 80)
+TCS['52_week'] = return_window_average(TCS['Close'], 260)
 
-NIFTYIT['4_week'] = return_window_average(INFY['Close'], 4)
-NIFTYIT['16_week'] = return_window_average(INFY['Close'], 16)
+NIFTYIT['4_week'] = return_window_average(NIFTYIT['Close'], 20)
+NIFTYIT['16_week'] = return_window_average(NIFTYIT['Close'], 80)
+NIFTYIT['52_week'] = return_window_average(NIFTYIT['Close'], 260)
 
 
 #**************************** PART 2 *****************************
